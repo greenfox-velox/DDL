@@ -1,3 +1,2 @@
-This is a read me.
 
-[Click](https://github.com/DDL/DDL.github.io)
+[Day1 Webpage Repo](https://github.com/DDL/DDL.github.io)
