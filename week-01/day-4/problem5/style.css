@@ -13,16 +13,23 @@ p {
 
 ul {
   color: blue;
+
 }
 
-il {
-  color:blue;
+li{
+  list-style-type: square;
+}
+.blaq{
+  color: black;
+  list-style-type:disc;
 }
 
-il.apple{
+.apple{
   color: red;
+  list-style-type:disc;
 }
 
-il.blacks{
+.dec{
+  list-style-type: decimal;
   color: black;
 }
