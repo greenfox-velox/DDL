@@ -1,29 +1,75 @@
 body {
+  padding: 0px 150px;
+}
 
 }
 
 img {
-  width:100%;
+
 }
 
 header {
-  width:auto;
-  height: auto;
-  font-family: 'Josefin Sans', sans-serif;
+  height: 400px;
+  font-family: 'Abril Fatface', cursive;
   background-image: url("anakin.png");
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 20px;
 }
+
+.anakin{
+  padding: 250px 300px 10px 200px;
+  font-size: 50px;
+}
+
 
 section {
-  width: 50%;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 30px 100px 0px 100px;
+  margin: 0px 150px;
+}
+.section1{
+    line-height: 30px;
+    font-size: 20px;
+}
+.achive{
+  line-height: 30px;
+}
+.experience{
+  line-height: 30px;
+}
+.ftraining{
+  line-height: 30px;
+}
+ .personal{
+   line-height: 30px;
 }
 
-p {
 
+p {
+  font-size: 17px;
+  font-weight: lighter;
+  padding: 0px 10px 10px 0px;
+}
+
+.p1{
+  font-size: 1.3em;
+}
+
+.pbold{
+  padding-top: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-style: italic;
+}
+.nopadd{
+  padding:0px;
 }
 
 ul {
-
+  padding: 0px 10px 10px 40px;
 }
 
 li {
@@ -31,7 +77,15 @@ li {
 }
 
 blockquote {
-
+  width: 800px;
+  padding: 60px 10px 60px 60px;
+  margin: 50px 200px;
+  background-position: center;
+  background-color: #444444;
+  font-size:50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 h1 {
@@ -39,9 +93,17 @@ h1 {
 }
 
 h2 {
-
+  padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
 h3 {
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+hr{
+  width:800px;
+  border: 1px solid;
 }
