@@ -2,15 +2,16 @@ body {
   margin: 0px;
   letter-spacing: 0.6px;
   font-weight: lighter;
-  color: #222;
+  color: #a4c639;
   padding-left: 150px;
   padding-right: 150px;
 }
 
 header {
-  height: 400px;
+  height: 250px;
   font-family: "Abril Fatface", cursive;
-  background-image: url("anakin.png");
+  background-image: url("");
+  background-color: #a4c639;
   background-size: cover;
   margin-bottom: 60px;
   margin-top: 0px;
@@ -22,7 +23,7 @@ h1 {
   font-weight: lighter;
   color: #222;
   padding-left: 290px;
-  padding-top: 245px;
+  padding-top: 50px;
   font-size: 34px;
   line-height: 50px;
 }
@@ -35,7 +36,7 @@ section {
   font-family: "Josefin Sans";
   font-size: 18px;
   line-height: 18px;
-  color: #222;
+  color: #a4c639;
   width: 685px;
   margin-left: 290px;
 }
@@ -44,7 +45,7 @@ p {
   margin: 0px;
   letter-spacing: 1.6px;
   font-weight: lighter;
-  color: #222;
+  color: #a4c639;
 }
 
 blockquote {
@@ -52,11 +53,11 @@ blockquote {
   padding: 50px;
   margin: 55px auto;
   background-position: center;
-  background-color: #444444;
+  background-color: #a4c639;
   font-size: 45px;
   font-weight: bold;
   color: #FFFFFF;
-  text-align: left;
+  text-align: center;
   font-family: "Abril Fatface", cursive;
 }
 
