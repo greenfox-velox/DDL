@@ -1,54 +1,50 @@
-.wrapper{
+body {
   width: 100%;
-  display: inline;
-  box-sizing: border-box;
+  height: 750px;
+  margin: 0 auto;
 }
 
-.cyan{
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cyan {
   background-color: #00FFFF;
   width: 100%;
   height: 100px;
-  position: fixed;
-  left: 0;
 }
 
 .orange{
     background-color: #FEA500;
     height: 500px;
-    width: 100px;
-    position: fixed;
-    left: 0;
-    top: 108px;
+    flex-basis: 100px;
 }
+
 .red{
   background-color: #FE0000;
   width: 300px;
   height: 500px;
+  position: relative;
 }
 
 .purple{
     background-color: #671A99;
     height: 500px;
-    width: 100px;
-    position: fixed;
-    top: 108px;
-    right: 0;
+    flex-basis: 100px;
 }
 
 .blue{
   background-color: #001AFE;
   width: 100%;
   height: 100px;
-  position: fixed;
-  left: 0;
-  top: 600px;
 }
 
 .meanlittleblackbox{
   background-color: #000000;
   width: 50px;
   height: 50px;
-  position: relative;
-  top: -1120px;
-  left: 700px;
+  position: absolute;
+  top: 430px;
+  right: 20px;
 }
