@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+}
+
+
+div {
+  width: 380px;
+  display: block;
+  margin: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+img {
+   float: left;
+}
+
+div::after {
+  content: " ";
+  display: block;
+  clear: left;
+}
+
+.duck {
+  float: right;
+}
+
+.mbox {
+  box-sizing: border-box;
+  width: 250px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  top: -380px;
+  left: 100px;
+  background-color: white;
+  display: block;
+}
+
+.mboxfirstline {
+  border-bottom: 2px solid black;
+  width: 246px;
+  margin-left: 0px;
+
+}
+.mboxfirstline::first-line{
+  color: red;
+  border-bottom: 2px solid black;
+  width: 246px;
+  margin-left: 0px;
+}
+
+.mboxsecondline{
+  border: 0;
+  width: 246px;
+  margin-left: 0px;
+}
+
+.mboxthirdline{
+  border-bottom: 2px solid black;
+  width: 246px;
+  margin-left: 0px;
+}
+
+.mboxOK{
+  float: right;
+  width: 30px;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mboxCancel{
+  float: right;
+  width: 50px;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
