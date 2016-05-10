@@ -1,0 +1,111 @@
+body {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  color: #4A4261;
+  font-style: bold;
+}
+
+.wrapper {
+  width: 640px;
+  height: 1000px;
+  background-color: #DCD6CD;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header {
+  font-size: 20px;
+  line-height: 26px;
+  color: #4078c0;
+}
+
+.darkback {
+  box-sizing: border-box;
+  width: 100px;
+  background-color: #938C97;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sex{
+  width: 150px;
+}
+
+.perbracon {
+  display: flex;
+}
+
+.birthgender {
+  display: flex;
+}
+
+.personal {
+  width: 320px;
+  height: 210px;
+  background-color: red;
+}
+
+.persdata {
+}
+
+.name {
+}
+
+.brand {
+  width: 320px;
+  height:220px;
+  background-color: blue;
+}
+
+.brandy {
+  display: flex;
+}
+
+.brand1 {
+
+}
+
+.brand2 {
+
+}
+
+.contact {
+  width: 320px;
+  height: 430px;
+  background-color: green;
+
+}
+
+.intro {
+  width: 640px;
+  height: 230px;
+  background-color: orange;
+}
+
+.submit {
+  width: 640px;
+  height: 230px;
+}
+
+textarea {
+  margin: 1% 5% 1% 5%;
+}
+
+.intsub {
+  background-color: purple;
+}
+
+.savebutton {
+  background-color: pink;
+}
+
+.clearbutton {
+  background-color: lime;
+}
+
+input {
+  width: 150px;
+}
