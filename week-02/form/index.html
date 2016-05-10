@@ -10,51 +10,55 @@
     <div class="wrapper">
       <header>Profil</header>
       <form class="" action="index.html" method="post">
-        <div class="perbracon">
-          <div class="perbirthgen">
-            <div class="personal">
-              <div class="persdata"><span class="darkback">Személyes Adatok</span></div>
-                <div class="name">
-                  <label for="name">Név<br><input type="text" name="name" value="" maxlength="50" required autofocus></label><br>
+        <div class="form-container">
+          <div class="personal-info-box">
+            <div class="personal"><p>Személyes Adatok</p>
+                <div class="namebox">
+                  <label for="name"><strong>Név<strong><span> *</span></label><br>
+                    <input type="text" id="name" maxlength="50" required autofocus><br>
                 </div>
                 <div class="birthgender">
-                  <label for="birth" class="birth">Születési Éved<input type="text" name="birth" value="" placeholder="pl.: 1984" maxlength="4" size="10%" ></label>
-                  <label for="sex" class="sex">Nemed<br>
-                    <input type="radio" name="m" value=""><label for="m">nő</label>
-                    <input type="radio" name="m" value=""><label for="wm">férfi</label>
-                  </label>
+                  <div class="birth">
+                    <label for="birth"><strong>Születési Éved</strong></label><br>
+                    <input type="number" id="birth" placeholder="pl.: 1984" maxlength="4"></label>
+                  </div>
+                  <div class="gender">
+                    <label for=""><strong>Nemed<strong></label><br>
+                    <div class="radio-buttons">
+                      <input type="radio" name="m" value="no"><label for="m">nő</label>
+                      <input type="radio" name="m" value="ffi"><label for="wm">férfi</label>
+                    </div>
+                  </div>
                 </div>
+
             </div>
             <div class="brand">
-              <span>Milyen márkát szeretsz?</span>
-              <div class="brandy">
+              <label for=""><strong>Milyen márkát szeretsz?</strong></label>
+            </div>
+              <div class="brandflex">
                 <div class="brand1">
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Adidas</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Apple</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Coca-Cola</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Mazda</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Nike</label>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Adidas</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Apple</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Coca-Cola</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Mazda</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Nike</label><br>
                 </div>
                 <div class="brand2">
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Opel</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Ray-Ban</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Starbucks</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Tesla</label>
-                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Yahoo</label>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Opel</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Ray-Ban</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Starbucks</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Tesla</label><br>
+                  <input type="checkbox" name="checkbox" value="indeterminate"><label for="checkbox">Yahoo</label><br>
                 </div>
               </div>
-              <span>Többet is választhatsz!</span>
-            </div>
+              <p class="more">Többet is választhatsz!</p>
           </div>
           <div class="contact">
-            <div class="persdata"><span class="darkback">Kapcsolat</span></div>
-            <div class="contacta">
-              <label for="">Telefonszám<br><input type="tel" name="tel" value="" placeholder="+36 -- --- ---" required></label><br>
-              <label for="">E-mail<br><input type="email" name="email" value="" placeholder="nev@domain.hu" required></label><br>
-              <label for="">Facebook<br><input type="url" name="fb" value="" placeholder="http://facebook.com/..."></label><br>
-              <label for="">Twitter<br><input type="url" name="twitter" value="" placeholder="http://twitter.com/..."></label><br>
-            </div>
-            <div class="contactb">
+            <p class="contact-title">Kapcsolat</p>
+              <label for=""><strong>Telefonszám</strong><span> *</span></label><br><input type="tel" name="tel" value="" placeholder="+36 -- --- ---" required><br>
+              <label for=""><strong>E-mail</strong><span> *</span></label><br><input type="email" name="email" value="" placeholder="nev@domain.hu" required><br>
+              <label for=""><strong>Facebook<strong></label><br><input type="url" name="fb" value="" placeholder="http://facebook.com/..."><br>
+              <label for=""><strong>Twitter<strong></label><br><input type="url" name="twitter" value="" placeholder="http://twitter.com/..."><br>
               <label for="">Milyen házban laksz?<br>
                 <select name="select">
                   <option value="value0" selected disabled>Válassz típust!</option>
@@ -68,27 +72,32 @@
               </label>
             </div>
           </div>
-        </div>
-        <div class="intsub">
+        <div class="intsubbut">
           <div class="intro">
-            <label for="">Bemutatkozás<br><textarea name="name" rows="12" cols="70" placeholder="Írj magadról pár mondatot!" required maxlength="500"></textarea></label>
+            <label for=""><strong>Bemutatkozás<strong><span> *</span></label><br>
+              <textarea name="name" rows="8" cols="40" placeholder="Írj magadról pár mondatot!" required maxlength="500"></textarea>
           </div>
           <div class="submit">
-            <div class="">
-              <label for=""><span>CV FELTÖLTÉSE<br></span><button type="choosefile" name="button" value"FILE KIVÁLASZTÁSA"></button></label>
-            </div>
-            <div class="">
-              <label for=""><input type="checkbox" name="name" value="">Elfogadom a <a href="#">felhasználási feltételeket</a></label>
+            <label for=""><strong>cv feltöltése</strong><br>
+            <input type="file" name="name" class="fileupload">
+            <input type="button" name="name" value="FILE KIVÁLASZTÁSA">
+            <div class="termsofuse">
+              <label for=""><input type="checkbox">Elfogadom a <a href="#">felhasználási feltételeket</a></label>
             </div>
           </div>
+        <div class="buttons">
+          <div class="save">
+            <label for=""></label>
+            <button type="submit">MENTÉS</button>
+          </div>
         </div>
-        <div class="savebutton">
-          <button type="choosefile" name="button" value="MENTÉS"></button>
+        <div class="cancel">
+          <label for=""></label>
+          <button type="reset" name="button">ŰRLAP TÖRLÉSE</button>
         </div>
-        <div class="clearbutton">
-          <button type="choosefile" name="button" value"ŰRLAP TÖRLÉSE"></button>
+
         </div>
     </div>
-      </form>
+    </form>
   </body>
 </html>

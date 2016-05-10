@@ -1,111 +1,153 @@
 body {
-  width: 100%;
-  box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
-  color: #4A4261;
-  font-style: bold;
 }
 
 .wrapper {
   width: 640px;
-  height: 1000px;
-  background-color: #DCD6CD;
-  padding: 20px;
+  background: #DCD6CD;
+  padding: 20px; 45
   font-size: 14px;
-  font-weight: bold;
+  margin: 0 auto;
+}
+
+header .form-container .intsubbut {
+  padding: 10px 0 0 25px;
+}
+
+.form-container {
+  display:flex;
+  height: 100%;
 }
 
 header {
-  font-size: 20px;
-  line-height: 26px;
-  color: #4078c0;
+  color: #4A415E;
+  font-size: 16px;
 }
 
-.darkback {
+.personal-info-title .contact-title {
   box-sizing: border-box;
-  width: 100px;
-  background-color: #938C97;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: bold;
+  width: 300px;
+  background: #938C97;
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
 }
 
-.sex{
-  width: 150px;
+.personal-info-box .contact {
+  width: 50%;
 }
 
-.perbracon {
-  display: flex;
+label {
+  color: color: #574E67;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+span {
+  color: red;
+}
+
+input, select, textarea {
+  border: 1px solid #A8A1A5;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 5px 10px 0;
+}
+
+input#name {
+  width: 300px;
 }
 
 .birthgender {
   display: flex;
 }
 
-.personal {
-  width: 320px;
-  height: 210px;
-  background-color: red;
+.birth, .gender {
+  width: 50%
 }
 
-.persdata {
+.radio-buttons {
+  padding: 10px;
 }
 
-.name {
+input#birth {
+  width: 80px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+div.gender {
+  margin: 0 10px;
 }
 
 .brand {
-  width: 320px;
-  height:220px;
-  background-color: blue;
+  margin-bottom: 10px;
 }
 
-.brandy {
+.brandflex {
   display: flex;
 }
 
-.brand1 {
-
+.brand1, .brand2 {
+  width: 50%;
 }
 
-.brand2 {
-
+.more {
+  color: #BBB6B1;
+  font-size: 14px;
 }
 
-.contact {
-  width: 320px;
-  height: 430px;
-  background-color: green;
-
-}
-
-.intro {
-  width: 640px;
-  height: 230px;
-  background-color: orange;
-}
-
-.submit {
-  width: 640px;
-  height: 230px;
+.contact > input {
+  width: 300px;
 }
 
 textarea {
-  margin: 1% 5% 1% 5%;
+  height: 165px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.intsub {
-  background-color: purple;
+.fileupload {
+  display: none;
 }
 
-.savebutton {
-  background-color: pink;
+input[type="button"] {
+  width: 220px;
+  background: #F2F2F2;
 }
 
-.clearbutton {
-  background-color: lime;
+.termsofuse {
+  padding-top: 20px;
 }
 
-input {
-  width: 150px;
+a {
+  color: #574E67;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+button[type="submit"], button[type="reset"] {
+
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.save {
+  width: 220px;
+  color: #E1DBD1;
+  font-size: 18px;
+}
+
+.cancel {
+  width: 160px;
+  color: #574E67;
+  font-size: 14px;
+  float: right;
+  position: relative;
+  bottom: 30px;
 }
