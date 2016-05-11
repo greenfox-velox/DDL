@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0, auto;
+}
+
+.sidebar {
+  background: orange;
+  height: 100%;
+  width: 175px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background:cyan;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  top: 0px;
+  left: 175px;
+}
+
+main {
+  background: red;
+  min-width: 270px;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 175px;
+}
+
+footer {
+  background: green;
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  bottom: 0;
+  left: 175px;
+}
