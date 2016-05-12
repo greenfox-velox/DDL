@@ -5,58 +5,238 @@
 body {
   box-sizing: border-box;
   margin: 0, auto;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.wrapper {
   display: flex;
 }
 
 .sidebar {
   background: orange;
-  height: 100%;
-  width: 175px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: auto;
+  min-width: 175px;
+  font-size: 12px;
 }
+
+.sidebar-main-nav > ul {
+  list-style: none;
+}
+
+.interaction > ul {
+  list-style: none;
+}
+
+.tools > ul {
+  list-style: none;
+}
+
+.print-export > ul {
+  list-style: none;
+}
+
+.in-other-projects > ul {
+  list-style: none;
+}
+
+.language > ul {
+  list-style: none;
+}
+
+.wikilogo {
+  width: 135px;
+  height: 155px;
+  margin: 10px;
+}
+
+.flex-container {
+}
+
+
 
 header {
   background:cyan;
   width: 100%;
   height: 80px;
-  position: relative;
-  top: 0px;
-  left: 175px;
+  }
+
+.header-nav-container {
+}
+
+.header-first-line {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.header-nav1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.article-read {
+  margin-left: 10px;
+}
+
+.login, .create-account, .contributions, .talk, .log {
+  margin: 5px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.header-second-line {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-nav2 {
+  display: flex;
+}
+
+.view-history, .search, .wiki-article, .read {
+  margin: 5px;
+  font-size: 12px;
+}
+
+.wiki-article, .read {
+  float: left;
 }
 
 main {
   background: red;
   min-width: 270px;
   height: 100%;
-  position: relative;
-  top: 0;
-  left: 175px;
+  margin: auto;
 }
 
-footer {
-  background: green;
-  width: 100%;
-  height: 140px;
-  position: relative;
-  bottom: 0;
-  left: 175px;
+.main-intro-box {
+  margin-bottom: 20px;
+}
+
+h1 , h2 {
+  font-family: times;
+  font-size: 29px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.submarge {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.intro, .early-life, .sage-project-box, .nasa, .apollo11, .businesses, .legacy, .awards, .personal-life, .publications  {
+  margin: 10px 0;
+  background-color: purple;
+  color: pink;
+  margin-bottom: 20px;
+}
+
+.p-with-tab {
+  margin-left: 100px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.contents {
+  width: 125px;
+  height: 265px;
+  background: #f9f9f9;
+  border: 1px solid #252525;
+  padding: 5px;
+  margin: 5px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #252525;
 }
 
 .margeabsolute {
   width: 270px;
   height: 520px;
+  border: 1px solid #000000;
+  background: #f9f9f9;
+  float: right;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #252525;
+  text-align: center;
+  float: right;
+}
+
+.margeabsolute-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.margeabsolute-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.margeabsolute-box-A {
+  min-width: 70px;
+  height: 100%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.margeabsolute-box-B {
+  min-width: 180px;
+  height: 100%;
+  color: red;
+  margin-left: 5px;
+}
+
+.nasa-box-picture, .apollo11-box-picture, .legacy-box-picture{
+  border: 1px solid #000000;
+  background: #f9f9f9;
+  float: right;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #252525;
 }
 
 .nasa-box-picture {
-  float: right;
+  width: 220px;
+  height: 220px;
 }
 
 .apollo11-box-picture {
-  float: right;
+  width: 230px;
+  height: 350px;
 }
 
 .legacy-box-picture {
-  float: right;
+  width: 180px;
+  height: 280px;
+}
+
+footer {
+  background: green;
+  width: 100%;
+  height: 100%;
 }
