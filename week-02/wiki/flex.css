@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0, auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.margeabsolute {
+  width: 260px;
+  height: 500px;
+  border: 1px solid #aaaaaa;
+  background: #e8f2f8;
+  float: right;
+  padding: 5px;
+  margin: 15px 5px 40px 10px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #252525;
+  text-align: center;
+  float: right;
+  background: -moz-linear-gradient(top,  #f9f9f9 0%, #f9f9f9 100%);
+  background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f9f9f9 100%);
+  background: linear-gradient(to bottom,  #f9f9f9 0%,#f9f9f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9',GradientType=0 );
+}
+
+.margeabsolute-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.margeabsolute-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.margeabsolute-box-A {
+  width: 70px;
+  height: 100%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.margeabsolute-box-B {
+  width: 180px;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.marge_table {
+  width: 260px;
+  height: 500px;
+  border: 1px solid #aaaaaa;
+  background: #e8f2f8;
+  padding: 5px;
+  margin: 15px 5px 40px 10px;
+  line-height: 17px;
+  color: #252525;
+  font-size: 12px;
+}
+
+.marge-table-pic {
+  text-align: center;
+}
+
+.marge_table {
+  width: 260px;
+  height: 500px;
+  border: 1px solid #aaaaaa;
+  background: #e8f2f8;
+  padding: 5px;
+  margin: 15px 5px 40px 10px;
+  line-height: 17px;
+  color: #252525;
+  font-size: 12px;
+}
+
+.marge-table-pic {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+sub {
+  font-size: 12px;
+}
+
+.justbold {
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.marge-dl {
+  width: 260px;
+  height: 500px;
+  border: 1px solid #aaaaaa;
+  background: #e8f2f8;
+  padding: 5px;
+  margin: 15px 5px 40px 10px;
+  line-height: 17px;
+  color: #252525;
+  font-size: 12px;
+}
+
+dl {
+ line-height: 20px;
+ margin-left: 10px;
+ margin-right: 10px;
+ font-size: 12px;
+}
+
+dt {
+ float: left;
+}
+
+dd {
+ margin-left: 40%;
+
+}
