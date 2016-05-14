@@ -1,23 +1,22 @@
-p {
-    font-size: 30px;
-    color: #002682;
-    width: 240px;
-    background-color: #FFFF00;
-    padding: 20px;
-    border: 5px solid;
-    border-color: #010101;
-    margin:0px;
-}
-
-p.redblue{
-    color: #BE2736;
-    background-color: #00FFFF;
-}
-
-div {
-    width:290px;
-    height:250px;
+.fruits, .vegetables  {
     background-color: #008000;
-    padding: 10px;
+    height:250px;
     margin: 10px;
+    padding: 10px;
+    width:290px;
+}
+
+p {
+    background-color: #FFFF00;
+    border: 5px solid #010101;
+    color: #002682;
+    font-size: 30px;
+    margin:0;
+    padding: 20px;
+    width: 240px;
+}
+
+.redblue {
+  color: #BE2736;
+  background-color: #00FFFF;
 }
