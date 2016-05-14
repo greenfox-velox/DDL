@@ -1,35 +1,34 @@
 h1 {
-      color: #000EC6;
-
+  color: #000ec6;
 }
 
 h2 {
-    color: #E49B32;
+  color: #e49b32;
 }
 
 p {
-  color: black;
+  color: #000;
 }
 
 ul {
-  color: blue;
-
+  color: #0000ff;
 }
 
-li{
+li {
   list-style-type: square;
 }
-.blaq{
-  color: black;
-  list-style-type:disc;
+
+.black {
+  color: #000;
+  list-style-type: disc;
 }
 
-.apple{
-  color: red;
-  list-style-type:disc;
+.apple {
+  color: #ff0000  ;
+  list-style-type: disc;
 }
 
-.dec{
+.dec {
   list-style-type: decimal;
-  color: black;
+  color: #000;
 }

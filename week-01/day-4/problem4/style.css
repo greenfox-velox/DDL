@@ -1,11 +1,23 @@
 body {
-      color: #037F05;
+  color: #037F05;
 }
 
-p {
-  color: black;
+.black {
+  color: #000;
 }
 
-pre {
-  color: black;
+.red {
+  color: #ff0000;
+}
+
+.blue {
+  color: #0000ff;
+}
+
+.list {
+  color: #000;
+}
+
+.italic {
+  font-style: italic;
 }
