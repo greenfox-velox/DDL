@@ -1,10 +1,9 @@
 p {
-    font-size: 30px;
-    color: #FF910C;
-    width: 240px;
     background-color: #FFFF00;
-    padding: 20px;
-    border: 5px solid;
-    border-color: black;
+    border: 5px solid #000;
+    color: #FF910C;
+    font-size: 30px;
     margin: 10px;
+    padding: 20px;
+    width: 240px;    
 }
