@@ -1,82 +1,68 @@
-html {
+body {
     box-sizing: border-box;
 }
 
-
-div {
-  width: 380px;
-  display: block;
+.wrapper {
+  width: 500px;
   margin: 20px;
   margin-bottom: 10px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
 
-img {
-   float: left;
-}
-
-div::after {
+.wrapper::after {
   content: " ";
-  display: block;
   clear: left;
 }
 
 .duck {
+  float: left;
+}
+
+.duck2 {
   float: right;
 }
 
 .mbox {
-  box-sizing: border-box;
   width: 250px;
   height: 150px;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 10px;
   position: relative;
-  top: -380px;
-  left: 100px;
-  background-color: white;
-  display: block;
+  top: -330px;
+  left: 130px;
+  background-color: #fff;
 }
 
-.mboxfirstline {
-  border-bottom: 2px solid black;
-  width: 246px;
-  margin-left: 0px;
-
-}
-.mboxfirstline::first-line{
-  color: red;
-  border-bottom: 2px solid black;
-  width: 246px;
-  margin-left: 0px;
+.mboxfirstline, .mboxsecondline,.mboxthirdline  {
+  width: 245px;
+  padding: 10px 0 10px 5px;
+  margin-right: 0px;
+  border-bottom: 2px solid #000;
 }
 
-.mboxsecondline{
-  border: 0;
-  width: 246px;
-  margin-left: 0px;
+.mboxfirstline::first-line {
+  color: #f00;
 }
 
-.mboxthirdline{
-  border-bottom: 2px solid black;
-  width: 246px;
-  margin-left: 0px;
-}
-
-.mboxOK{
+.mboxthirdline {
+  margin-top: 15px;
   float: right;
+  border-bottom: none;
+}
+
+.mboxOK, .mboxCancel {
+  float: right;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: grey;
+  margin: 3px;
+}
+
+.mboxOK {
   width: 30px;
-  background-color: grey;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
 }
 
-.mboxCancel{
-  float: right;
+.mboxCancel {
   width: 50px;
-  background-color: grey;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
 }

@@ -1,38 +1,44 @@
-body {
-  width: 100%;
-  height: 750px;
-  margin: 0;
+.wrapper {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 10px 200px 10px 200px;
 }
 
 header, footer {
-  width: 100%;
+  width: 540px;
   height: 100px;
+  position: relative;
 }
 
 header {
   background-color: #00FFFF;
+  top: 50px;
+  left: 350px;
 }
 
 footer {
   background-color: #001AFE;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-between;
+  top: -950px;
+  left: 350px;
 }
 
 .left-sidebar, .right-sidebar {
   height: 500px;
-  flex-basis: 100px;
+  width: 100px;
+  position: relative;
+
 }
 
 .left-sidebar {
   background-color: #FEA500;
+  top: 50px;
+  left: 350px;
 }
 
 .right-sidebar {
   background-color: #671A99;
+  top: -950px;
+  left: 790px;
 }
 
 main {
@@ -40,13 +46,15 @@ main {
   width: 300px;
   height: 500px;
   position: relative;
+  top: -450px;
+  left: 470px;
 }
 
 .blackbox {
   background-color: #000000;
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: relative;
   top: 430px;
-  right: 20px;
+  left: 230px;
 }

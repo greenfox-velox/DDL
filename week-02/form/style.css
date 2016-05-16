@@ -1,54 +1,57 @@
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .wrapper {
   width: 640px;
-  background: #DCD6CD;
-  padding: 20px; 45
+  background: #dcd6cd;
+  padding: 20px;
   font-size: 14px;
   margin: 0 auto;
 }
 
-header .form-container .intsubbut {
+.red {
+  color: #f00;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+header .form-container .intsubbut	 {
   padding: 10px 0 0 25px;
+}
+
+header {
+  color: #4a415e;
+  font-size: 16px;
 }
 
 .form-container {
   display:flex;
-  height: 100%;
 }
 
-header {
-  color: #4A415E;
-  font-size: 16px;
+.personal-info-box, .contact {
+  display: flex;
+  flex-direction: column;
 }
 
-.personal-info-title .contact-title {
-  box-sizing: border-box;
-  width: 300px;
-  background: #938C97;
-  color: #fff;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-.personal-info-box .contact {
-  width: 50%;
+.contact-title {
+  padding-bottom: 20px;
 }
 
 label {
-  color: color: #574E67;
+  color: color: #574e67;
   font-size: 14px;
   margin-right: 5px;
 }
 
-span {
-  color: red;
-}
-
 input, select, textarea {
-  border: 1px solid #A8A1A5;
+  border: 1px solid #a8a1a5;
   border-radius: 5px;
   padding: 10px;
   margin: 5px 5px 10px 0;
@@ -63,7 +66,7 @@ input#name {
 }
 
 .birth, .gender {
-  width: 50%
+  width: 50%;
 }
 
 .radio-buttons {
@@ -89,11 +92,13 @@ div.gender {
 }
 
 .brand1, .brand2 {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
 .more {
-  color: #BBB6B1;
+  color: #bbb6b1;
   font-size: 14px;
 }
 
@@ -113,7 +118,7 @@ textarea {
 
 input[type="button"] {
   width: 220px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .termsofuse {
@@ -121,7 +126,7 @@ input[type="button"] {
 }
 
 a {
-  color: #574E67;
+  color: #574e67;
 }
 
 .buttons {
@@ -131,7 +136,6 @@ a {
 }
 
 button[type="submit"], button[type="reset"] {
-
   padding: 10px;
   border: 1px solid;
   border-radius: 5px;
@@ -139,13 +143,13 @@ button[type="submit"], button[type="reset"] {
 
 .save {
   width: 220px;
-  color: #E1DBD1;
+  color: #e1Dbd1;
   font-size: 18px;
 }
 
 .cancel {
   width: 160px;
-  color: #574E67;
+  color: #574e67;
   font-size: 14px;
   float: right;
   position: relative;
