@@ -16,3 +16,10 @@ elif time > 200:
     print(out)
 else:
     print("Run Forest Run!")
+
+if time > 200:
+    out = "Time out"
+elif ac % 4 == 0:
+    out = "check"
+else:
+    print("Run Forest Run!")

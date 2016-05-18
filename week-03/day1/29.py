@@ -16,3 +16,18 @@ elif is_bonus == True:
 else:
     print("Haha")
 print(ab)
+
+if not is_bonus:
+    if credits > 50:
+        ab -= 2
+    else:
+        ab -= 1
+print(ab)
+
+if not is_bonus:
+    pass
+if credits > 50:
+    ab -= 2
+else:
+    ab -= 1 
+print(ab)
