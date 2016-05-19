@@ -6,7 +6,7 @@
 a = 1
 
 while a <= 100:
-    if a%3 == 0 and a%5 == 0:
+    if a%15 == 0:
         print("FizzBuzz")
     elif a%3 == 0:
         print("Fizz")
@@ -15,6 +15,7 @@ while a <= 100:
     else:
         print(a)
     a += 1
+
 
 for b in range(1, 101):
     if b%3 == 0 and b%5 == 0:
