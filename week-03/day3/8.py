@@ -5,45 +5,38 @@
 # it should have a method to add grades
 # it should have a `salute` method that prints it's full name and the average of it's grades as well
 
-class Person():
-    def __init__(self):
+class Person:
+    def __init__(self,  first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
-        return
 
-    def greet(first_name, last_name):
-        return first_name + last_name
+    def greet(self):
+        print('Hi, I am ' + self.first_name + ' ' + self.last_name)
 
-person1 = Person
-print(person1.greet("Feri ", "Vágási"))
 
 class Student(Person):
-
-    def __init__(self):
+     def __init__(self, first_name, last_name):
+        super().__init__(first_name, last_name)
         self.grades = []
 
-    def add_grade(self, grade):
-        if 1 <= grade <= 5:
-            self.grades += [grade]
-        return self.grades
+     def add_grade(self, new_grade):
+        self.grades.append(new_grade)
 
-    def average(self):
-        total = 0
-        for num in self.grades:
-            total += num
-        self.average = total/len(self.grades)
-        return self.average
+     def salute(self):
+        self.greet()
+        summa = 0
+        for grade in self.grades:
+            summa += grade
+        print(summa / len(self.grades))
 
-    def salute(self, first_name, last_name):
-        return str(self.average) + first_name + last_name
+feri = Person('Feri', 'Vágási')
+feri.greet()
 
-
-feri = Student()
-feri.add_grade(5)
-feri.add_grade(2)
-feri.add_grade(4)
-feri.add_grade(3)
-feri.add_grade(2)
-feri.add_grade(5)
-feri.average()
-print(feri.salute(" Feri ", "Vágási"))
+adorjan = Student('Adorján', 'Majoros')
+adorjan.add_grade(5)
+adorjan.add_grade(2)
+adorjan.add_grade(4)
+adorjan.add_grade(3)
+adorjan.add_grade(2)
+adorjan.add_grade(5)
+adorjan.salute()
