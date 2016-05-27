@@ -15,22 +15,68 @@ x = canvas_width/8
 y = canvas_height/8
 z = 0
 
-for d in range(1,9):
-    for i in range(1,9):
-        if i%2 == 0:
-            c = "black"
-        else:
-            c = "white"
-        rect = canvas.create_rectangle(1 + z, 1 * d , x+z, y, fill=c)
-        z += x
-    z = 0
-    for i in range(1,9):
-        if i%2 != 0:
-            c = "black"
-        else:
-            c = "white"
-        rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
-        z += x
 
+for i in range(1,9):
+    if i%2 == 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, 1 * d , x+z, y, fill=c)
+    z += x
+z = 0
+for i in range(1,9):
+    if i%2 != 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
+    z += x
+z = 0
+for i in range(1,9):
+    if i%2 != 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
+    z += x
+z = 0
+for i in range(1,9):
+    if i%2 != 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
+    z += x
+for i in range(1,9):
+    if i%2 == 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, 1 * d , x+z, y, fill=c)
+    z += x
+z = 0
+for i in range(1,9):
+    if i%2 != 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
+    z += x
+z = 0
+for i in range(1,9):
+    if i%2 != 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
+    z += x
+z = 0
+for i in range(1,9):
+    if i%2 != 0:
+        c = "black"
+    else:
+        c = "white"
+    rect = canvas.create_rectangle(1 + z, y *d , y + z, x + y*d, fill=c)
+    z += x
 
 root.mainloop()
