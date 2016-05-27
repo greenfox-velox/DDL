@@ -9,8 +9,8 @@ def fractal(x, y, size):
     if size < 10:
         pass
     else:
-        fractal(x, y, size/2)
-        fractal(x+size/2, y+size/2, size/2)
+        fractal(x, y, size/3)
+        fractal(x+size/3, y+size/3, size/3)
 
 fractal(5, 5, 590)
 
