@@ -5,7 +5,7 @@ a = 0
 b = 0
 
 while a < len(ah):
-    b = b + int(ah[a])
+    b += ah[a]
     a += 1
 
 print(b)

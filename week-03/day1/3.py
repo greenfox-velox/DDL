@@ -1,5 +1,5 @@
 c = 44
-c = c *2
+c = c * 2
 print(c)
 
 cc = 44

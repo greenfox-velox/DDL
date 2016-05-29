@@ -3,8 +3,4 @@ x = 'cheese'
 # characters with a True for even and
 # false False output otherwise
 
-if len(x)%2 == 0:
-    print("True")
-else:
-    print("False")
-    
+print(len(x) % 2 == 0)

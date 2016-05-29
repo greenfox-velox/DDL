@@ -14,7 +14,7 @@ elif credits < 50 and is_bonus == False:
 elif is_bonus == True:
     ab = ab
 else:
-    print("Haha")
+    print('Haha')
 print(ab)
 
 if not is_bonus:
@@ -29,5 +29,5 @@ if not is_bonus:
 if credits > 50:
     ab -= 2
 else:
-    ab -= 1 
+    ab -= 1
 print(ab)

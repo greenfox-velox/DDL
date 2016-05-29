@@ -6,23 +6,23 @@
 a = 1
 
 while a <= 100:
-    if a%15 == 0:
-        print("FizzBuzz")
-    elif a%3 == 0:
-        print("Fizz")
-    elif a%5 == 0:
-        print("Buzz")
+    if a % 15 == 0:
+        print('FizzBuzz')
+    elif a % 3 == 0:
+        print('Fizz')
+    elif a % 5 == 0:
+        print('Buzz')
     else:
         print(a)
     a += 1
 
 
 for b in range(1, 101):
-    if b%3 == 0 and b%5 == 0:
-        print("FizzBuzz")
-    elif b%3 == 0:
-        print("Fizz")
-    elif b%5 == 0:
-        print("Buzz")
+    if b % 3 == 0 and b % 5 == 0:
+        print('FizzBuzz')
+    elif b % 3 == 0:
+        print('Fizz')
+    elif b % 5 == 0:
+        print('Buzz')
     else:
         print(b)

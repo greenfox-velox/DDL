@@ -3,6 +3,6 @@ x = 'monkey'
 # print 'Long!' otherwise print 'Short!'
 
 if len(x) > 4:
-    print("Long!")
+    print('Long!)
 else:
-    print("Short")
+    print('Short')

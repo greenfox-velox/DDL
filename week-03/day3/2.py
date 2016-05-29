@@ -7,7 +7,7 @@
 class Car():
 
     def __init__(self, type, km):
-        print("Zoomzoomzoom")
+        print('Zoomzoomzoom')
         self.type = type
         self.km = km
 
@@ -16,7 +16,7 @@ class Car():
         return self.km
 
 
-my_mazda = Car("mazda", 12000)
+my_mazda = Car('mazda', 12000)
 my_mazda.ride(100)
-print(my_mazda.type) # "mazda"
-print(my_mazda.km) # 12100
+print(my_mazda.type)
+print(my_mazda.km)

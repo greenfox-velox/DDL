@@ -10,14 +10,14 @@
 
 def xmas_tree(row):
     space = row - 1
-    star=1
+    star = 1
     for i in range(0, row):
         for i in range(0 , space):
-            print(' ',end='')
+            print(' ', end='')
         for i in range(0, star):
-            print('*',end='')
+            print('*', end='')
         for i in range(0, space):
-            print(' ',end='')
+            print(' ', end='')
         star = star + 2
         space = space - 1
         print()

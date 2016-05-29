@@ -8,18 +8,18 @@ out = ''
 # set out to 'Time out'
 # otherwise set out to 'Run Forest Run!'
 
-if ac%4 == 0 and time <= 200:
-    out = "check"
+if ac % 4 == 0 and time <= 200:
+    out = 'check'
     print(out)
 elif time > 200:
-    out = "Time out"
+    out = 'Time out'
     print(out)
 else:
-    print("Run Forest Run!")
+    print('Run Forest Run!')
 
 if time > 200:
-    out = "Time out"
+    out = 'Time out'
 elif ac % 4 == 0:
-    out = "check"
+    out = 'check'
 else:
-    print("Run Forest Run!")
+    print('Run Forest Run!')

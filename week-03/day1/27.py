@@ -4,18 +4,18 @@ z = 13
 # if more than 20 print 'Less!'
 
 if 10 < z < 20:
-    print("Sweet")
+    print('Sweet')
 elif z < 10:
-    print("More")
+    print('More')
 elif z > 20:
-    print("Less")
+    print('Less')
 else:
-    print("10 or 20")
+    print('10 or 20')
 
 
 if z > 20:
-    print("Less")
+    print('Less')
 elif z > 10:
-    print("Sweet")
+    print('Sweet')
 else:
-    print("More")
+    print('More')

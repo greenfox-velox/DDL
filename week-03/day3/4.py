@@ -17,7 +17,7 @@ class Student():
         total = 0
         for num in self.grades:
             total += num
-        return total/len(self.grades)
+        return total / len(self.grades)
 
 bela = Student()
 bela.add_grade(5)

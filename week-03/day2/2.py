@@ -3,12 +3,14 @@ af = 123
 # double af with it
 
 def double_it(input):
-    return (2*input)
+    return (2 * input)
 
 print(double_it(af))
 
 def test(actual, expected):
     if expected == actual:
-        print("Check")
+        print('Check')
     else:
-        print("Fokit")
+        print(':(')
+
+test(246, double_it(af))

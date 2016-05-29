@@ -5,7 +5,6 @@
 class Circle():
 
     def __init__(self, radius):
-        print("Hello")
         self.radius = radius
 
     def get_circumference(self):
