@@ -12,7 +12,7 @@ canvas = Canvas(root, width = 300, height = 300)
 canvas.pack()
 
 def draw_square(x, y):
-    rect = canvas.create_rectangle(x, y, x+50, y+50, fill='olive')
+    rect = canvas.create_rectangle(x, y, x + 50, y + 50, fill = 'olive')
 
 draw_square(20, 40)
 draw_square(150, 150)

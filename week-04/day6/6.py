@@ -18,10 +18,10 @@ def ears(n):
     if n <= 0:
         return 0
     else:
-        if ((n-1)%2 == 0):
-            return ears(n-1) + 2
+        if ((n - 1)%2 == 0):
+            return ears(n - 1) + 2
         else:
-            return ears(n-1) + 3
+            return ears(n - 1) + 3
 
 print(ears(1))
 print(ears(2))

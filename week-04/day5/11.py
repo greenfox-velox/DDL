@@ -11,12 +11,12 @@ root = Tk()
 canvas_width = 300
 canvas_height = 300
 
-canvas = Canvas(root, width= canvas_width, height= canvas_height)
+canvas = Canvas(root, width = canvas_width, height = canvas_height)
 canvas.pack()
 
 def draw_colorful_square(square_size, fill_colour):
     x = 1
-    for i in range(1,150):
+    for i in range(1, 150):
         color_list = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink']
         color_list.append(fill_colour)
         for i in color_list:

@@ -3,19 +3,12 @@
 # Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6),
 # while divide (/) by 10 removes the rightmost digit (126 / 10 is 12).
 
-# def sumi3(n):
-#     if n == 0:
-#         return 0
-#     else:
-#         return (n%10) + sumi3(n//10)
-#
-# print(sumi3(12342413531535325132124134134125353624632636452))
-#
+
 # def sumdigits(number):
 #   if number == 0:
 #     return 0
 #   else:
-#     return (number%10) + sumdigits(number//10)
+#     return (number % 10) + sumdigits(number // 10)
 #
 # print(sumdigits(1234))
 
@@ -27,5 +20,5 @@ def sum(number):
        last_digit = number % 10
        rest_of_num = number // 10
        return last_digit + sum(rest_of_num)
-
+       
 print(sum(12345))

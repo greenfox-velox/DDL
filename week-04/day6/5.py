@@ -12,6 +12,6 @@ def ears(n):
     if n <= 0 :
         return 0
     else:
-        return ears(n-1) + 2
+        return ears(n - 1) + 2
 
 print(ears(123))
