@@ -1,9 +1,6 @@
 # Write a function, that takes two strings and returns a boolean value based on if the two strings are Anagramms or not.
 #
-def anagram(str1, str2):
-    a = sorted(str1)
-    b = sorted(str2)
-
+def anagramm(str1, str2):
     if str1 or str2 != '':
         pass
     else:
@@ -15,9 +12,16 @@ def anagram(str1, str2):
         else:
             pass
     except:
-        return(a == b)
+        pass
 
-print(anagram('alma', 'kutya'))
+    a = str1.lower()
+    b = str2.lower()
+    a = sorted(str1)
+    b = sorted(str2)
+
+    return a == b
+
+print(anagramm('mala', 'alma'))
 
 
 # Write a function, that takes a string as an argument and returns a dictionary with all letters in the string as keys, and numbers as values that shows how many occurrences there are.

@@ -1,13 +1,10 @@
 import sys
 from sys import argv
-import csv
+
 
 class ToDoApp():
     def __init__(self):
-        try:
-            self.open_csv()
-        except FileNotFoundError:
-            pass
+        pass
 
     def cmdLine_arg(self):
         print('Python Todo application\n')
@@ -19,52 +16,49 @@ class ToDoApp():
         print(' -c   Completes an task')
 
 
-    def open_csv(self):
-        with open('todo.csv', newline='') as f:
-            self.f = list(csv.reader(f, delimiter=';'))
-        return self.f
-
     def list_all_tasks(self):
         try:
-            if len(self.f) == 0:
+            file = open('todo.txt')
+            f = file.readlines()
+            file.close()
+            if len(f) == 0:
                 print('No todos for today! :)')
             number = 0
             output = ''
-            for line in self.f: #self
+            for line in f:
                 number += 1
-                output += (str(number) + ' - ' + str(line[0 ]) + '\n')
+                output += (str(number) + ' - ' + line)
             return output
         except FileNotFoundError:
             return 'File not found'
 
     def add_new_task(self):
         try:
-            f = open('todo.csv','a')
-            if len(sys.argv) == 2:
-                 print('Unable to remove: No index is provided')
-            else:
-                f.write(sys.argv[2] + '\n')
+            file = open('todo.txt', 'a')
+            file.write('[ ]' + sys.argv[2] + '\n')
+            file.close()
         except FileNotFoundError:
             return 'File not found'
 
     def remove_task(self):
-        file = open('todo.csv')
+        file = open('todo.txt')
         f = file.readlines()
         file.close()
 
         if len(sys.argv) == 2:
              print('Unable to remove: No index is provided')
-        elif(int(argv[2])) > len(f):
-             print('Unable to remove: Index is out of bound')
+
         elif (type(sys.argv[2])) == str:
             try:
+                if(int(argv[2])) > len(f):
+                     print('Unable to remove: Index is out of bound')
                 int(sys.argv[2])
-                file = open('todo.csv')
+                file = open('todo.txt')
                 remove_list = file.readlines()
                 remove_list = remove_list[:(int(sys.argv[2]))-1] + remove_list[(int(sys.argv[2])):]
                 file.close()
                 remove_output = ''
-                file = open('todo.csv', 'w')
+                file = open('todo.txt', 'w')
                 for item in remove_list:
                     remove_output += item
                 file.write(remove_output)
@@ -73,7 +67,22 @@ class ToDoApp():
                 print('Index is not a number')
 
     def complete_a_task(self):
-        print('This will be the Complete function')
+        try:
+            f = open('todo.txt')
+            text = f.readlines()
+            text[int(sys.argv[2])-1] = text[int(sys.argv[2])-1].replace('[ ]', '[x]')
+            f.close()
+            f = open('todo.txt', 'w')
+            for i in text:
+                f.write(i)
+            f.close()
+        except IndexError:
+            if len(sys.argv) == 2:
+                print ('Unable to remove: Index is out of bound')
+            else:
+                print('Unable to remove: Index is out ')
+        except ValueError:
+            print ('Unable to remove: Index is not a number')
 
     def main(self):
         if len(sys.argv) == 1:
