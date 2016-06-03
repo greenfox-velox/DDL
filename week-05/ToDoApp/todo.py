@@ -15,6 +15,13 @@ class ToDoApp():
         print(' -r   Removes an task')
         print(' -c   Completes an task')
 
+    def missing_file():
+        try:
+            file = open('todo.txt')
+            file.close()
+            print('File ready')
+        except:
+            print('File missing')
 
     def list_all_tasks(self):
         try:
@@ -78,11 +85,11 @@ class ToDoApp():
             f.close()
         except IndexError:
             if len(sys.argv) == 2:
-                print ('Unable to remove: Index is out of bound')
+                print ('Unable to check: No index is provided')
             else:
-                print('Unable to remove: Index is out ')
+                print('1')
         except ValueError:
-            print ('Unable to remove: Index is not a number')
+            print ('Unable to check: Index is not a number')
 
     def main(self):
         if len(sys.argv) == 1:
