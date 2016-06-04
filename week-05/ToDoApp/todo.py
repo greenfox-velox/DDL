@@ -58,10 +58,8 @@ class ToDoApp():
         file = open('todo.txt')
         f = file.readlines()
         file.close()
-
         if len(sys.argv) == 2:
              print('Unable to remove: No index is provided')
-
         elif (type(sys.argv[2])) == str:
             try:
                 if(int(argv[2])) > len(f):

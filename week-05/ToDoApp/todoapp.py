@@ -18,6 +18,7 @@ class ToDoApp():
             file.close()
 
     def read_in_txt(self):
+        
         file = open('todoapp.csv')
         f = file.readlines()
         file.close()
@@ -41,7 +42,7 @@ class ToDoApp():
         else:
             try:
                 file = open('todoapp.csv', 'a')
-                file.write(False, '[ ]' + task + '\n')
+                file.write('False', '[ ]' + task + '\n')
                 file.close()
             except FileNotFoundError:
                 return 'File not found'
