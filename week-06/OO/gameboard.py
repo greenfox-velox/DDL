@@ -33,14 +33,17 @@ class Gameboard():
             i.draw(self.canvas)
 
     def keypress(self, event):
-        if event.keysym == 's':
+        if event.keysym == 'Down':
             self.hero_move_down()
-        if event.keysym == 'w':
+        if event.keysym == 'Up':
             self.hero_move_up()
-        if event.keysym == 'a':
+        if event.keysym == 'Left':
             self.hero_move_left()
-        if event.keysym == 'd':
+        if event.keysym == 'Right':
             self.hero_move_right()
+        if event.keysym == 'space':
+            print('Not now, bro.')
+
 
     def create_hero(self):
         self.hero.hero_default()

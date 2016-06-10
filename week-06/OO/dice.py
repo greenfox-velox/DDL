@@ -7,9 +7,3 @@ class Dice():
             i = randint(1,6)
             dice.append(i)
         return dice
-
-dice = Dice()
-print(dice.random_dice(3))
-
-dice2 = Dice()
-print(dice.random_dice(5))
