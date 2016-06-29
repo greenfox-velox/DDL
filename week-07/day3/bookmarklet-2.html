@@ -5,7 +5,12 @@
   <title>Workshop: Bookmarklets</title>
 </head>
 <body>
-  <a href="javascript:alert('nothing here yet!');">
+    <a href="javascript:(function () { var images = document.querySelectorAll('img');
+
+    images.forEach(function (e) {
+        e.setAttribute('src', 'https://s-media-cache-ak0.pinimg.com/736x/aa/00/40/aa0040a22096c2fc2d35a91b5fad1d04.jpg');
+    });
+    })()">
     Bookmarklet 2
   </a>
   <h1>Antoine de Saint-Exupery's 110th Birthday</h1>
