@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content:space-around;
+    background-color: olive;
+    align-items: center;
+}
+
+h1 {
+    color: olive;
+    text-align: center;
+}
+
+h3 {
+    color: olive;
+    text-align: center;
+}
+
+.wrapper {
+    background-color: lightgreen;
+    height: 550px;
+    width: 550px;
+}
+
+.big_boxes, .mini_boxes, .mini_image_boxes {
+    display: flex;
+    justify-content:space-around;
+    margin: 10px;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}
+
+.main_bar img {
+    height: 310px;
+    width: 410px;
+}
+
+img:hover {
+    background-color: darkgreen;
+    opacity: 0.3;
+}
+
+.main_bar img:hover {
+    background-color: lightgreen;
+    opacity: 0.3;
+}
+
+.GreenFoxAcademy:hover, .HTML5:hover, .CSS3:hover, .Python3:hover, .Javascript:hover {
+    border: 5px solid orange;
+}
+
+.left_side_arrow, .right_side_arrow, .left_side_arrow_mini, .right_side_arrow_mini {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_side_arrow img, .right_side_arrow img {
+    height: 50px;
+    width: 50px;
+}
+
+.left_side_arrow_mini img, .right_side_arrow_mini img {
+    height: 20px;
+    width: 20px;
+}
+
+.left_side_arrow img:hover, .left_side_arrow_mini img:hover , .right_side_arrow img:hover, .right_side_arrow_mini img:hover {
+    background-color: lightgreen;
+    opacity: 0.7;
+}
+
+button {
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   overflow: hidden;
+}
