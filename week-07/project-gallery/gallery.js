@@ -1,64 +1,146 @@
 'use strict';
 
-var counter = 0;
-var actual_main = 0;
-var actual_mini = 0;
-var limit = 0;
+var images = [
+  {
+    number: 'GreenFoxAcademy',
+    path: 'images/fox.png',
+  },
+  {
+    number: 'Github',
+    path: 'images/github_.png',
+  },
+  {
+    number: 'HTML5',
+    path: 'images/html5.png',
+  },
+  {
+    number: 'CSS3',
+    path: 'images/css3.png',
+  },
+  {
+    number: 'Python3',
+    path: 'images/python.png',
+  },
+  {
+    number: 'Javascript',
+    path: 'images/js.png',
+  },
+  {
+    number: 'Google',
+    path: 'images/google_.png',
+  },
+  {
+    number: 'Stackoverflow',
+    path: 'images/stackoverflow_.png',
+  },
+  {
+    number: 'Databases',
+    path: 'images/database.png',
+  },
+];
 
-var images = document.querySelectorAll('.mini_image_boxes img');
-var image_container = document.querySelector('.mini_image_boxes');
-var image_array = Array.from(images);
+// create and insert main image
+var currentImage = 0;
+var mainPictureContainer = document.querySelector('.pic_main');
+var picture = document.createElement('img');
+picture.setAttribute('src', images[0].path);
+mainPictureContainer.appendChild(picture);
 
-var main_image = document.querySelector('.pic_main');
-main_image.addEventListener('click', alert_stuff);
+// create and insert thumbnail images
+var thumbnailDiv = document.querySelector('.mini_image_boxes');
+var number = document.querySelector('h3');
 
-var image_title = document.querySelector('h3');
-image_title.textContent = image_array[actual_main].getAttribute('class');
+images.forEach(function (e) {
+  var thumbnailImages = document.createElement('img');
+  thumbnailImages.setAttribute('src', e.path);
+  thumbnailDiv.appendChild(thumbnailImages);
+  // add click function to thumbnail images
+  thumbnailImages.addEventListener('click', function () {
+    picture.setAttribute('src', e.path);
+    number.textContent = e.number;
+  });
+});
 
-var button_left = document.querySelector('.left');
-button_left.addEventListener('click', scroll_left);
-
-var button_right = document.querySelector('.right');
-button_right.addEventListener('click', scroll_right);
-
-var button_left_mini = document.querySelector('.left_mini');
-button_left_mini.addEventListener('click', scroll_left_mini);
-
-var button_right_mini = document.querySelector('.right_mini');
-button_right_mini.addEventListener('click', scroll_right_mini);
-
-function alert_stuff() {
-    alert(image_title.textContent)
+// switch main image with other images in the gallery list
+function getNewPic() {
+  var mainImage = document.querySelector('.pic_main img');
+  mainImage.setAttribute('src', images[currentImage].path);
+  number.textContent = images[currentImage].number;
 }
 
-function scroll_right () {
-  if (actual_main < image_array.length-1) {
-    actual_main++;
-    main_image.setAttribute('src', image_array[actual_main].src);
-    image_title.textContent = image_array[actual_main].getAttribute('class');
+// cycle through the main images, index increse/decrease
+function nextImage() {
+  if (currentImage < images.length - 1) {
+    currentImage++;
+  } else {
+    currentImage = 0;
   }
 }
 
-function scroll_left () {
-    if (actual_main > 0) {
-      actual_main--;
-      main_image.setAttribute('src', image_array[actual_main].src);
-      image_title.textContent = image_array[actual_main].getAttribute('class');
+function prevImage() {
+  if (currentImage > 0) {
+    currentImage--;
+  } else {
+    currentImage = images.length - 1;
   }
 }
 
-function scroll_right_mini () {
-  if (actual_main < image_array.length-1) {
-    actual_main++;
-    main_image.setAttribute('src', image_array[actual_main].src);
-    image_title.textContent = image_array[actual_main].getAttribute('class');
+// add click events to main next & prev buttons
+var next = document.querySelector('.right_side_arrow');
+next.addEventListener('click', function() {
+  nextImage();
+  getNewPic();
+});
+
+var prev = document.querySelector('.left_side_arrow');
+prev.addEventListener('click', function () {
+  prevImage();
+  getNewPic();
+});
+
+// thumbnail
+var thumbImage = 0;
+function slide() {
+  for (var i = thumbImage; i < thumbImage + 4; i++) {
+    var thumbnailImages = document.createElement('img');
+    thumbnailImages.setAttribute('src', images[i].path);
+    thumbnailDiv.appendChild(thumbnailImages);
+    addtoThumbnails(i, thumbnailImages);
   }
 }
 
-function scroll_left_mini () {
-    if (actual_main > 0) {
-      actual_main--;
-      main_image.setAttribute('src', image_array[actual_main].src);
-      image_title.textContent = image_array[actual_main].getAttribute('class');
+function addtoThumbnails(i, thumbnailImages) {
+  thumbnailImages.addEventListener('click', function () {
+    picture.setAttribute('src', images[i].path);
+    number.textContent = images[i].number;
+  });
+}
+
+
+// // cycle through the thumbnail images, index increse/decrease
+function nextThumb() {
+  if (thumbImage + 4 < images.length - 1) {
+    thumbImage++;
   }
 }
+
+function prevThumb() {
+  if (thumbImage > 0) {
+    thumbImage--;
+  }
+}
+
+// add click events to thumbnail next & prev buttons
+var thumbNext = document.querySelector('.right_side_arrow_mini');
+thumbNext.addEventListener('click', function () {
+  thumbnailDiv.innerHTML = '';
+  nextThumb();
+  slide();
+});
+
+var thumbPrev = document.querySelector('.left_side_arrow_mini');
+thumbPrev.addEventListener('click', function () {
+  thumbnailDiv.innerHTML = '';
+  prevThumb();
+  slide();
+});

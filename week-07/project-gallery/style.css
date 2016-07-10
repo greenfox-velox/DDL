@@ -3,38 +3,44 @@ body{
     justify-content:space-around;
     background-color: olive;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: olive;
-    text-align: center;
-}
-
-h3 {
+h1, h3 {
     color: olive;
     text-align: center;
 }
 
 .wrapper {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
     background-color: lightgreen;
-    height: 550px;
-    width: 550px;
+    width:600px;
+    box-sizing: border-box;
+    flex-direction: column;
+
 }
 
 .big_boxes, .mini_boxes, .mini_image_boxes {
     display: flex;
     justify-content:space-around;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 img {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
-.main_bar img {
+.pic_main img {
     height: 310px;
-    width: 410px;
+    width: 310px;
+    padding: 5px;
+    border: 5px solid olive;
 }
 
 img:hover {
@@ -47,8 +53,11 @@ img:hover {
     opacity: 0.3;
 }
 
-.GreenFoxAcademy:hover, .HTML5:hover, .CSS3:hover, .Python3:hover, .Javascript:hover {
-    border: 5px solid orange;
+.mini_image_boxes img:hover {
+    background-color: lightgreen;
+    opacity: 0.3;
+    border: 5px solid green;
+    box-sizing: border-box;
 }
 
 .left_side_arrow, .right_side_arrow, .left_side_arrow_mini, .right_side_arrow_mini {
